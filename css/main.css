@@ -39,12 +39,22 @@ header {
     flex-direction: column;
   }
 }
+@media (max-width: 991.98px) {
+  .menu {
+    flex-direction: column;
+  }
+}
 .menu__logo {
   margin: 0 auto;
   padding: 0 35px 0 0;
   cursor: pointer;
 }
 @media (max-width: 767.98px) {
+  .menu__logo {
+    padding: 0 0 20px 0;
+  }
+}
+@media (max-width: 991.98px) {
   .menu__logo {
     padding: 0 0 20px 0;
   }
@@ -66,6 +76,11 @@ header {
 }
 .menu__list li {
   margin: 0 0 0 20px;
+}
+@media (max-width: 767.98px) {
+  .menu__list li {
+    margin: 0 auto;
+  }
 }
 .menu__link {
   font-weight: 600;
@@ -106,13 +121,21 @@ header {
   display: flex;
   align-items: center;
 }
-.monitor img {
-  padding: 0 5px 0 5px;
+@media (max-width: 991.98px) {
+  .monitor {
+    margin: 50px auto;
+    width: 170px;
+    justify-content: center;
+  }
 }
 @media (max-width: 767.98px) {
-  .monitor img {
-    padding: 0px 5px 0 40px;
+  .monitor {
+    justify-content: center;
+    margin: 10px auto;
   }
+}
+.monitor img {
+  padding: 0 5px 0 5px;
 }
 
 footer {
@@ -307,6 +330,17 @@ body {
   z-index: 10;
   top: 705px;
 }
+@media (max-width: 767.98px) {
+  .content__sceen {
+    width: 100%;
+    top: 720px;
+  }
+}
+@media (max-width: 479.98px) {
+  .content__sceen {
+    top: 820px;
+  }
+}
 
 .title {
   width: 518px;
@@ -322,6 +356,7 @@ body {
     flex-flow: wrap;
     width: 100%;
     margin: 0 auto;
+    text-align: center;
     padding: 0 0 0 0;
   }
 }
@@ -332,7 +367,7 @@ body {
 }
 @media (max-width: 767.98px) {
   .title__greetings {
-    font-size: 4em;
+    font-size: 3em;
   }
 }
 .title__item {
@@ -364,6 +399,12 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   margin: 54px 0 0 0;
 }
+@media (max-width: 767.98px) {
+  .playnow {
+    width: 100%;
+    margin: 20px auto;
+  }
+}
 
 .vector {
   width: 1440px;
@@ -378,6 +419,11 @@ body {
 .screen-group {
   width: 717px;
 }
+@media (max-width: 767.98px) {
+  .screen-group {
+    width: 100%;
+  }
+}
 
 .achievements {
   top: 773px;
@@ -389,16 +435,62 @@ body {
      object-fit: cover;
   justify-content: center;
 }
+@media (max-width: 767.98px) {
+  .achievements {
+    top: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .achievements img {
+    display: none;
+  }
+}
+@media (max-width: 479.98px) {
+  .achievements {
+    top: 773px;
+  }
+}
+@media (max-width: 991.98px) {
+  .achievements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .achievements__arrow {
   position: absolute;
   left: 290px;
   top: 0;
+}
+@media (max-width: 767.98px) {
+  .achievements__arrow {
+    display: none;
+  }
+}
+@media (max-width: 991.98px) {
+  .achievements__arrow {
+    display: none;
+  }
 }
 .achievements__arrow_bottom {
   position: absolute;
   left: 290px;
   top: 375px;
   transform: rotate(-130.5deg);
+}
+@media (max-width: 767.98px) {
+  .achievements__arrow_bottom {
+    display: none;
+  }
+}
+@media (max-width: 991.98px) {
+  .achievements__arrow_bottom {
+    display: none;
+  }
 }
 .achievements__system {
   position: absolute;
@@ -411,6 +503,23 @@ body {
   padding: 17px 25px 15px 20px;
   color: #2b2b2b;
 }
+@media (max-width: 767.98px) {
+  .achievements__system {
+    width: 100%;
+    right: 0;
+    left: 0;
+    top: 0;
+    position: relative;
+  }
+}
+@media (max-width: 991.98px) {
+  .achievements__system {
+    right: 0;
+    left: 0;
+    top: 0;
+    position: relative;
+  }
+}
 .achievements__skin {
   position: absolute;
   top: 235px;
@@ -422,6 +531,25 @@ body {
   padding: 17px 25px 15px 20px;
   color: #2b2b2b;
 }
+@media (max-width: 767.98px) {
+  .achievements__skin {
+    margin: 10px 0 10px 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    position: relative;
+  }
+}
+@media (max-width: 991.98px) {
+  .achievements__skin {
+    margin: 20px 0 20px 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    position: relative;
+  }
+}
 .achievements__secure {
   position: absolute;
   top: 455px;
@@ -432,6 +560,23 @@ body {
   border-radius: 20px;
   padding: 17px 25px 15px 20px;
   color: #2b2b2b;
+}
+@media (max-width: 767.98px) {
+  .achievements__secure {
+    position: relative;
+    right: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 991.98px) {
+  .achievements__secure {
+    right: 0;
+    left: 0;
+    top: 0;
+    position: relative;
+  }
 }
 .achievements .system__title {
   line-height: 31.69px;
@@ -476,16 +621,37 @@ body {
   font-weight: 700;
 }
 
+@media (max-width: 991.98px) {
+  .bg {
+    display: none;
+  }
+}
+
 .system-item {
   margin: 0px 0px -45px 44px;
+}
+@media (max-width: 767.98px) {
+  .system-item {
+    margin: 0 auto;
+  }
 }
 
 .skin-item {
   margin: -35px 0px -25px 40px;
 }
+@media (max-width: 767.98px) {
+  .skin-item {
+    margin: 0 auto;
+  }
+}
 
 .secure-item {
   margin: -30px 0px -20px 165px;
+}
+@media (max-width: 767.98px) {
+  .secure-item {
+    margin: 0 auto;
+  }
 }
 
 .arrow-item {
@@ -496,7 +662,11 @@ body {
 
 .separation {
   position: absolute;
+  right: 0;
   left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 72%;
 }
 .separation__vector {
@@ -513,6 +683,16 @@ body {
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 767.98px) {
+  .server {
+    top: 81%;
+  }
+}
+@media (max-width: 479.98px) {
+  .server {
+    top: 75%;
+  }
+}
 .server__title {
   font-weight: 700;
   color: #fff;
@@ -523,14 +703,10 @@ body {
   font-style: normal;
   padding: 0 0 83px 0;
 }
-.server__monitoring {
-  width: 920px;
-  height: 212px;
-  background: url(../img/risecraft1.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  border-radius: 20px;
-  padding: 26px 22px 13px 21px;
+@media (max-width: 767.98px) {
+  .server__title {
+    font-size: 4em;
+  }
 }
 .server__text {
   font-weight: 700;
@@ -540,12 +716,52 @@ body {
   color: #fff;
   text-align: center;
 }
-.server__slider {
-  width: 47px;
-  height: 11.46px;
-  margin: 23px 0 0 0;
-  display: flex;
-  flex-direction: row;
+@media (max-width: 767.98px) {
+  .server__text {
+    font-size: 1em;
+  }
+}
+
+.slide__start {
+  background: url(../img/risecraft1.svg);
+}
+
+.slide__center {
+  background: linear-gradient(to bottom right, rgb(80, 44, 155), rgba(255, 0, 138, 0.44));
+}
+
+.slide__end {
+  background: linear-gradient(to bottom right, rgb(80, 44, 155), rgba(255, 0, 138, 0.44));
+}
+
+@media (max-width: 767.98px) {
+  .vishlist {
+    width: 95%;
+  }
+}
+@media (max-width: 991.98px) {
+  .vishlist {
+    width: 95%;
+  }
+}
+
+.slide {
+  width: 920px;
+  height: 212px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 20px;
+  padding: 26px 22px 13px 21px;
+}
+@media (max-width: 767.98px) {
+  .slide {
+    width: 100%;
+  }
+}
+@media (max-width: 991.98px) {
+  .slide {
+    width: 100%;
+  }
 }
 
 .monitoring {
@@ -559,6 +775,11 @@ body {
   line-height: 39px;
   color: #ffffff;
 }
+@media (max-width: 767.98px) {
+  .monitoring__title {
+    font-size: 2em;
+  }
+}
 .monitoring__comment {
   top: 45px;
   left: 0;
@@ -568,6 +789,11 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #dcdcdc;
+}
+@media (max-width: 767.98px) {
+  .monitoring__comment {
+    font-size: 1em;
+  }
 }
 .monitoring__btn {
   left: 0;
@@ -586,6 +812,12 @@ body {
   line-height: 24px;
   cursor: pointer;
 }
+@media (max-width: 767.98px) {
+  .monitoring__btn {
+    font-size: 1em;
+    width: 40%;
+  }
+}
 .monitoring__btn:hover {
   background: rgba(51, 195, 74, 0.7);
 }
@@ -598,6 +830,11 @@ body {
   font-size: 12px;
   line-height: 15px;
   color: #dcdcdc;
+}
+@media (max-width: 767.98px) {
+  .monitoring__btn-item {
+    display: none;
+  }
 }
 .monitoring__player {
   position: absolute;
@@ -612,6 +849,11 @@ body {
 }
 .monitoring__player:hover {
   color: rgba(255, 255, 255, 0.8);
+}
+@media (max-width: 767.98px) {
+  .monitoring__player {
+    font-size: 1em;
+  }
 }
 .monitoring__chat {
   position: absolute;
@@ -632,8 +874,20 @@ body {
   text-align: end;
   color: #fff;
 }
+@media (max-width: 767.98px) {
+  .monitoring__chat-text {
+    display: none;
+  }
+}
 
 .slider {
+  width: 47px;
+  height: 11.46px;
+  margin: 23px 0 0 0;
+  display: flex;
+  flex-direction: row;
+}
+.slider__scroll {
   background: #fff;
   width: 11px;
   height: 11px;
@@ -643,6 +897,20 @@ body {
   margin: 0 auto;
   cursor: pointer;
 }
-.slider:hover {
+.slider__scroll:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.slider-item {
+  background: #fff;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  color: #fff;
+  padding: 0 2px 0 2px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.slider-item:hover {
   background: rgba(255, 255, 255, 0.8);
 }

@@ -58,6 +58,13 @@ body {
         position: absolute;
         z-index: 10;
         top: 705px;
+        @media (max-width: $md3+px) {
+            width: 100%;
+            top: 720px;
+        }
+        @media (max-width: $md4+px){
+            top: 820px;
+        }
         // top: 705px;
         // left: 261.5px;
     }
@@ -74,6 +81,7 @@ body {
         flex-flow: wrap;
         width: 100%;
         margin: 0 auto;
+        text-align: center;
         padding: 0 0 0 0;
     }
     &__greetings {
@@ -81,7 +89,7 @@ body {
         font-size: 50px;
         line-height: 60.95px;
         @media (max-width: $md3+px) {
-            font-size: 4em;
+            font-size: 3em;
         }
     }
 
@@ -112,6 +120,10 @@ body {
     justify-content: center;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     margin: 54px 0 0 0;
+    @media (max-width: $md3+px) {
+        width: 100%;
+        margin: 20px auto;
+    }
 }
 
 .vector {
@@ -128,6 +140,9 @@ body {
 .screen-group {
     width: 717px;
     //height: 443px;
+    @media (max-width: $md3+px) {
+        width: 100%;
+    }
 }
 
 .achievements {
@@ -141,16 +156,48 @@ body {
     display: flex;
     object-fit: cover;
     justify-content: center;
+    @media (max-width: $md3+px) {
+        top: 1000px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        img {
+            display: none;
+        }
+    }
+    @media (max-width: $md4+px){
+        top: 773px;
+    }
+    @media (max-width: $md2+px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     &__arrow {
         position: absolute;
         left: 290px;
         top: 0;
+        @media (max-width: $md3+px) {
+            display: none;
+        }
+        @media (max-width: $md2+px) {
+            display: none;
+        }
     }
     &__arrow_bottom {
         position: absolute;
         left: 290px;
         top: 375px;
         transform: rotate(-130.5deg);
+        @media (max-width: $md3+px) {
+            display: none;
+        }
+        @media (max-width: $md2+px) {
+            display: none;
+        }
     }
     &__system {
         position: absolute;
@@ -162,6 +209,19 @@ body {
         border-radius: 20px;
         padding: 17px 25px 15px 20px;
         color: #2b2b2b;
+        @media (max-width: $md3+px) {
+            width: 100%;
+            right: 0;
+            left: 0;
+            top: 0;
+            position: relative;
+        }
+        @media (max-width: $md2+px) {
+            right: 0;
+            left: 0;
+            top: 0;
+            position: relative;
+        }
     }
     &__skin {
         position: absolute;
@@ -173,6 +233,21 @@ body {
         border-radius: 20px;
         padding: 17px 25px 15px 20px;
         color: #2b2b2b;
+        @media (max-width: $md3+px) {
+            margin: 10px 0 10px 0;
+            right: 0;
+            left: 0;
+            top: 0;
+            width: 100%;
+            position: relative;
+        }
+        @media (max-width: $md2+px) {
+            margin: 20px 0 20px 0;
+            right: 0;
+            left: 0;
+            top: 0;
+            position: relative;
+        }
     }
     &__secure {
         position: absolute;
@@ -184,11 +259,21 @@ body {
         border-radius: 20px;
         padding: 17px 25px 15px 20px;
         color: #2b2b2b;
+        @media (max-width: $md3+px) {
+            position: relative;
+            right: 0;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        @media (max-width: $md2+px) {
+            right: 0;
+            left: 0;
+            top: 0;
+            position: relative;
+        }
     }
     .system {
-        &__icon {
-        }
-
         &__title {
             line-height: 31.69px;
             font-weight: 700;
@@ -207,9 +292,6 @@ body {
     }
 
     .skin {
-        &__icon {
-        }
-
         &__title {
             line-height: 31.69px;
             font-weight: 700;
@@ -227,9 +309,6 @@ body {
         }
     }
     .secure {
-        &__icon {
-        }
-
         &__title {
             line-height: 31.69px;
             font-weight: 700;
@@ -247,14 +326,28 @@ body {
         }
     }
 }
+.bg {
+    @media (max-width: $md2+px) {
+        display: none;
+    }
+}
 .system-item {
     margin: 0px 0px -45px 44px;
+    @media (max-width: $md3+px) {
+        margin: 0 auto;
+    }
 }
 .skin-item {
     margin: -35px 0px -25px 40px;
+    @media (max-width: $md3+px) {
+        margin: 0 auto;
+    }
 }
 .secure-item {
     margin: -30px 0px -20px 165px;
+    @media (max-width: $md3+px) {
+        margin: 0 auto;
+    }
 }
 
 .arrow-item {
@@ -265,7 +358,11 @@ body {
 
 .separation {
     position: absolute;
+    right: 0;
     left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: 72%;
     &__vector {
         width: $maxWidth + px;
@@ -281,6 +378,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media (max-width: $md3+px) {
+        top: 81%;
+    }
+    @media (max-width: $md4+px){
+        top: 75%;
+    }
     &__title {
         font-weight: 700;
         color: #fff;
@@ -290,16 +393,9 @@ body {
         text-align: center;
         font-style: normal;
         padding: 0 0 83px 0;
-    }
-
-    &__monitoring {
-        width: 920px;
-        height: 212px;
-        background: url(../img/risecraft1.svg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        border-radius: 20px;
-        padding: 26px 22px 13px 21px;
+        @media (max-width: $md3+px) {
+            font-size: 4em;
+        }
     }
 
     &__text {
@@ -309,13 +405,41 @@ body {
         padding: 56px 0 0 0;
         color: #fff;
         text-align: center;
+        @media (max-width: $md3+px) {
+            font-size: 1em;
+        }
     }
-    &__slider {
-        width: 47px;
-        height: 11.46px;
-        margin: 23px 0 0 0;
-        display: flex;
-        flex-direction: row;
+}
+.slide__start {
+    background: url(../img/risecraft1.svg);
+}
+.slide__center {
+    background: $gradientSlide;
+}
+.slide__end {
+    background: $gradientSlide;
+}
+
+.vishlist {
+    @media (max-width: $md3+px) {
+        width: 95%;
+    }
+    @media (max-width: $md2+px){
+            width: 95%;
+    }
+}
+.slide {
+    width: 920px;
+    height: 212px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 20px;
+    padding: 26px 22px 13px 21px;
+    @media (max-width: $md3+px) {
+        width: 100%;
+    }
+    @media (max-width: $md2+px){
+        width: 100%;       
     }
 }
 
@@ -328,6 +452,9 @@ body {
         font-size: 32px;
         line-height: 39px;
         color: #ffffff;
+        @media (max-width: $md3+px) {
+            font-size: 2em;
+        }
     }
 
     &__comment {
@@ -339,6 +466,9 @@ body {
         font-size: 16px;
         line-height: 20px;
         color: #dcdcdc;
+        @media (max-width: $md3+px) {
+            font-size: 1em;
+        }
     }
 
     &__btn {
@@ -357,6 +487,10 @@ body {
         font-size: 20px;
         line-height: 24px;
         cursor: pointer;
+        @media (max-width: $md3+px) {
+            font-size: 1em;
+            width: 40%;
+        }
         &:hover {
             background: rgb(51, 195, 74, 0.7);
         }
@@ -371,6 +505,9 @@ body {
         font-size: 12px;
         line-height: 15px;
         color: #dcdcdc;
+        @media (max-width: $md3+px) {
+            display: none;
+        }
     }
 
     &__player {
@@ -385,6 +522,9 @@ body {
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
         &:hover {
             color: rgb(255, 255, 255, 0.8);
+        }
+        @media (max-width: $md3+px) {
+            font-size: 1em;
         }
     }
     &__chat {
@@ -405,10 +545,33 @@ body {
         top: 135px;
         text-align: end;
         color: #fff;
+        @media (max-width: $md3+px) {
+            display: none;
+        }
+    }
+}
+.slider {
+    width: 47px;
+    height: 11.46px;
+    margin: 23px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    &__scroll {
+        background: #fff;
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        color: #fff;
+        padding: 0 2px 0 2px;
+        margin: 0 auto;
+        cursor: pointer;
+        &:hover {
+            background: rgb(255, 255, 255, 0.8);
+        }
     }
 }
 
-.slider {
+.slider-item {
     background: #fff;
     width: 11px;
     height: 11px;
@@ -417,7 +580,7 @@ body {
     padding: 0 2px 0 2px;
     margin: 0 auto;
     cursor: pointer;
-    &:hover{
+    &:hover {
         background: rgb(255, 255, 255, 0.8);
     }
 }
