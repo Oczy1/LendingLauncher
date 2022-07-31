@@ -17,6 +17,7 @@ header{
     align-items: center;
     height: 55px;
     @media (max-width: $md3+px) {
+        height: auto;
         flex-direction: column;
     }
     &__logo {
@@ -24,7 +25,7 @@ header{
         padding: 0 35px 0 0;
         cursor: pointer;
         @media (max-width: $md3+px){
-            padding: 0 0 0 0;
+            padding: 0 0 20px 0;
         }
     }
 

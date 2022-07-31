@@ -35,6 +35,7 @@ header {
 }
 @media (max-width: 767.98px) {
   .menu {
+    height: auto;
     flex-direction: column;
   }
 }
@@ -45,7 +46,7 @@ header {
 }
 @media (max-width: 767.98px) {
   .menu__logo {
-    padding: 0 0 0 0;
+    padding: 0 0 20px 0;
   }
 }
 .menu__body {
@@ -267,14 +268,44 @@ body {
 .main {
   width: 100%;
   height: 2654px;
+  overflow: hidden;
+  position: relative;
 }
-.chelik {
-  background-image: url("../img/chelik.svg");
-  background-repeat: no-repeat;
-  background-position-x: 700px;
-  background-position-y: 0px;
-  width: 980px;
+.greatings-img {
   height: 842px;
+  position: absolute;
+  left: 555px;
+  top: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.content__greatings {
+  width: 100%;
+  position: relative;
+}
+.content__separation {
+  position: absolute;
+  z-index: 10;
+  top: 750px;
+  left: -15%;
+}
+.content__mask {
+  position: absolute;
+  top: 423px;
+  left: -162.97px;
+}
+.content__sceen {
+  width: 717px;
+  height: 443px;
+  position: absolute;
+  z-index: 10;
+  top: 705px;
 }
 
 .title {
@@ -285,14 +316,333 @@ body {
   padding: 140px 0 0 0;
   color: #fff;
 }
+@media (max-width: 767.98px) {
+  .title {
+    align-items: center;
+    flex-flow: wrap;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0 0 0;
+  }
+}
 .title__greetings {
   font-weight: 700;
   font-size: 50px;
   line-height: 60.95px;
+}
+@media (max-width: 767.98px) {
+  .title__greetings {
+    font-size: 4em;
+  }
 }
 .title__item {
   font-weight: 300;
   font-style: italic;
   font-size: 20px;
   line-height: 30px;
+}
+@media (max-width: 767.98px) {
+  .title__item {
+    font-size: 1em;
+  }
+}
+
+.playnow {
+  width: 350px;
+  height: 80px;
+  background: rgb(51, 195, 74);
+  border-radius: 14px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29.26px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  margin: 54px 0 0 0;
+}
+
+.vector {
+  width: 1440px;
+}
+
+.mask-group {
+  width: 1026.99px;
+  mix-blend-mode: soft-light;
+  transform: rotate(7.25deg);
+}
+
+.screen-group {
+  width: 717px;
+}
+
+.achievements {
+  top: 773px;
+  width: 100%;
+  height: 575px;
+  position: relative;
+  display: flex;
+  -o-object-fit: cover;
+     object-fit: cover;
+  justify-content: center;
+}
+.achievements__arrow {
+  position: absolute;
+  left: 290px;
+  top: 0;
+}
+.achievements__arrow_bottom {
+  position: absolute;
+  left: 290px;
+  top: 375px;
+  transform: rotate(-130.5deg);
+}
+.achievements__system {
+  position: absolute;
+  top: 75px;
+  right: 60px;
+  width: 445px;
+  height: auto;
+  background: #fff;
+  border-radius: 20px;
+  padding: 17px 25px 15px 20px;
+  color: #2b2b2b;
+}
+.achievements__skin {
+  position: absolute;
+  top: 235px;
+  left: 0;
+  width: 445px;
+  height: auto;
+  background: #fff;
+  border-radius: 20px;
+  padding: 17px 25px 15px 20px;
+  color: #2b2b2b;
+}
+.achievements__secure {
+  position: absolute;
+  top: 455px;
+  right: 60px;
+  width: 445px;
+  height: auto;
+  background: #fff;
+  border-radius: 20px;
+  padding: 17px 25px 15px 20px;
+  color: #2b2b2b;
+}
+.achievements .system__title {
+  line-height: 31.69px;
+  font-weight: 700;
+  font-size: 26px;
+  padding: 0 0 15px 0;
+}
+.achievements .system__text {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15.85px;
+}
+.achievements .system__text b {
+  font-weight: 700;
+}
+.achievements .skin__title {
+  line-height: 31.69px;
+  font-weight: 700;
+  font-size: 26px;
+  padding: 0 0 15px 0;
+}
+.achievements .skin__text {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15.85px;
+}
+.achievements .skin__text b {
+  font-weight: 700;
+}
+.achievements .secure__title {
+  line-height: 31.69px;
+  font-weight: 700;
+  font-size: 26px;
+  padding: 0 0 15px 0;
+}
+.achievements .secure__text {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15.85px;
+}
+.achievements .secure__text b {
+  font-weight: 700;
+}
+
+.system-item {
+  margin: 0px 0px -45px 44px;
+}
+
+.skin-item {
+  margin: -35px 0px -25px 40px;
+}
+
+.secure-item {
+  margin: -30px 0px -20px 165px;
+}
+
+.arrow-item {
+  width: 325.98px;
+  height: 343.85px;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.35));
+}
+
+.separation {
+  position: absolute;
+  left: 0;
+  top: 72%;
+}
+.separation__vector {
+  width: 1440px;
+}
+
+.server {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 82%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.server__title {
+  font-weight: 700;
+  color: #fff;
+  font-size: 64px;
+  line-height: 78.02px;
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
+  text-align: center;
+  font-style: normal;
+  padding: 0 0 83px 0;
+}
+.server__monitoring {
+  width: 920px;
+  height: 212px;
+  background: url(../img/risecraft1.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 20px;
+  padding: 26px 22px 13px 21px;
+}
+.server__text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 14px;
+  padding: 56px 0 0 0;
+  color: #fff;
+  text-align: center;
+}
+.server__slider {
+  width: 47px;
+  height: 11.46px;
+  margin: 23px 0 0 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.monitoring {
+  position: relative;
+}
+.monitoring__title {
+  top: 0;
+  left: 0;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #ffffff;
+}
+.monitoring__comment {
+  top: 45px;
+  left: 0;
+  width: 249px;
+  position: absolute;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #dcdcdc;
+}
+.monitoring__btn {
+  left: 0;
+  top: 110px;
+  position: absolute;
+  width: 259.5px;
+  height: 59.2px;
+  background: rgb(51, 195, 74);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  cursor: pointer;
+}
+.monitoring__btn:hover {
+  background: rgba(51, 195, 74, 0.7);
+}
+.monitoring__btn-item {
+  left: 279px;
+  top: 127px;
+  position: absolute;
+  width: 312px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #dcdcdc;
+}
+.monitoring__player {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
+  cursor: pointer;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.monitoring__player:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+.monitoring__chat {
+  position: absolute;
+  right: 0;
+  top: 135px;
+  color: #fff;
+  cursor: pointer;
+}
+.monitoring__chat:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+.monitoring__chat-text {
+  width: 142px;
+  height: 32px;
+  position: absolute;
+  right: 30px;
+  top: 135px;
+  text-align: end;
+  color: #fff;
+}
+
+.slider {
+  background: #fff;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  color: #fff;
+  padding: 0 2px 0 2px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.slider:hover {
+  background: rgba(255, 255, 255, 0.8);
 }
