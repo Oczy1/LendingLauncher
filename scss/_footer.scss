@@ -8,13 +8,13 @@ footer{
     height: 338.5px;
     width: 100%;
     background: url(../img/Vector3.svg);
-    z-index: 10;
-    position: static;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    //z-index: 10;
+    //position: static;
+    //background-repeat: no-repeat;
+    // -webkit-background-size: cover;
+    // -moz-background-size: cover;
+    // -o-background-size: cover;
+    // background-size: cover;
     display: flex;
     align-items: flex-end;
     @media (max-width: $md3+px) {
